@@ -1,0 +1,12 @@
+{application, kettle,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { kettle_app, []}},
+  {env, []}
+ ]}.
