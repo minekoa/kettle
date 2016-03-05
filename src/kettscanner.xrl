@@ -14,6 +14,7 @@ DO         = do
 WAIT       = wait
 UNTIL      = until
 PARALLEL   = parallel
+SKIP       = skip
 DEVICE     = device
 
 Rules.
@@ -30,6 +31,7 @@ Rules.
 {WAIT}           : {token, {wait    , TokenLine}}.
 {UNTIL}          : {token, {until   , TokenLine}}.
 {PARALLEL}       : {token, {parallel, TokenLine}}.
+{SKIP}           : {token, {skip    , TokenLine}}.
 {DEVICE}         : {token, {device  , TokenLine}}.
 {VAR}            : {token, {var     , TokenLine}}.
 {WORD}           : {token, {ident   , TokenLine, TokenChars}}.
